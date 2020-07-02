@@ -9,7 +9,7 @@ use App\User;
 
 class CreateUserTest extends TestCase
 {
-    // use RefreshDatabase;  //メソッドの完了後にデータベースを初期化する
+    use RefreshDatabase;  //メソッドの完了後にデータベースを初期化する
 
     public function setUp(): void  //テストを行う前にデータベースにシーダーを使ってレコードを作成する
     {
